@@ -17,6 +17,12 @@
 <body>
     {{-- Header --}}
     @include('includes.header')
+
+    {{-- Main --}}
+    {{-- Jumbotron --}}
+    @include('includes.jumbotron')
+    {{-- Main content --}}
+    @yield('main-content')
 </body>
 
 </html>
