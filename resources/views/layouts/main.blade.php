@@ -26,6 +26,9 @@
         @yield('main-content')
     </main>
 
+    {{-- Footer --}}
+    @include('includes.footer')
+
 </body>
 
 </html>

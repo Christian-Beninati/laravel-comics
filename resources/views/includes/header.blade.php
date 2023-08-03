@@ -19,4 +19,3 @@
         </nav>
     </div>
 </header>
-s
