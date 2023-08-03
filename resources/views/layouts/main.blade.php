@@ -15,7 +15,8 @@
 </head>
 
 <body>
-
+    {{-- Header --}}
+    @include('includes.header')
 </body>
 
 </html>

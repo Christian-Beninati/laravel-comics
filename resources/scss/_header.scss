@@ -1,0 +1,40 @@
+@use "../scss/mixins" as *;
+@use "../scss/vars" as *;
+
+
+
+.header-container {
+    height: 100%;
+    @include flexbox(space-between, center);
+}
+
+header {
+    height: 110px;
+    background-color: $white;
+}
+
+img {
+    width: 80px;
+}
+
+ul {
+    display: flex;
+
+    li {
+        padding: 0 10px;
+
+        a {
+            color: $lightBlack;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+
+            &:hover,
+            &.active {
+                color: $blue;
+                border-bottom: 5px solid $blue;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
