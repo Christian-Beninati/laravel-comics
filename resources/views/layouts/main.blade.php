@@ -19,10 +19,13 @@
     @include('includes.header')
 
     {{-- Main --}}
-    {{-- Jumbotron --}}
-    @include('includes.jumbotron')
-    {{-- Main content --}}
-    @yield('main-content')
+    <main>
+        {{-- Jumbotron --}}
+        @include('includes.jumbotron')
+        {{-- Main content --}}
+        @yield('main-content')
+    </main>
+
 </body>
 
 </html>
