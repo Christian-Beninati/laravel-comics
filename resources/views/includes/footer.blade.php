@@ -54,6 +54,14 @@
                     </ul>
                 </div>
             </nav>
+            <div class="cookies">
+                <p>
+                    All Site Content TM and @ 2020 Dc Entertainment, unless otherwise
+                    <a href="#">noted here.</a>
+                    All rights reserved.
+                </p>
+                <a href="#">Cookies Settings</a>
+            </div>
         </div>
     </div>
 

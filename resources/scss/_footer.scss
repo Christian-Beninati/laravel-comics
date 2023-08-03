@@ -8,7 +8,7 @@ footer {
 .footer-top {
     height: 100%;
     position: relative;
-    padding-top: 110px;
+    padding-top: 100px;
 }
 
 .container-footer {
@@ -57,13 +57,32 @@ nav {
             color: $white;
             padding: 10px 0;
         }
-
         a {
             color: $grey;
             font-weight: 300;
             font-size: 12px;
+        
         }
     }
+}
+
+.cookies {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+
+    
+    a {
+        color: $blue;
+    }
+
+    p {
+        color: $grey;
+    
+    }
+    
 }
 
 
