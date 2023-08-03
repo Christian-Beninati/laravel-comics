@@ -48,3 +48,31 @@ main {
     }
 }
 
+.main-links {
+    background-color: $blue;
+
+    img {
+        width: 60px;
+        height: 70px;
+        margin-right: 10px;
+        object-fit: scale-down;
+    }
+
+    ul {
+        @include flexbox(space-between, center);
+        width: 100%;
+        height: 150px;
+    }
+
+    a {
+        @include flexbox(flex-start, center);
+        font-size: 0.7rem;
+        color: $white;
+    }
+    h3 {
+        margin-top: 10px;
+        color: $white;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
