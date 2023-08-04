@@ -10,8 +10,10 @@
         </figure>
         <nav>
             <ul>
+                {{-- foreach on links --}}
                 @foreach ($links as $link)
-                    <li><a href="{{ route($link['route']) }}">{{ $link['text'] }}</a></li>
+                    <li><a @if (Route::is($link['route'])) class="active" @endif {{-- add class active --}}
+                            href="{{ route($link['route']) }}">{{ $link['text'] }}</a></li>
                 @endforeach
             </ul>
         </nav>
