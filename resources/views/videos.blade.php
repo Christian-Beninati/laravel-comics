@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 {{-- Title --}}
-@section('title', 'Comics')
+@section('title', 'Videos')
 
 {{-- Main content --}}
 @section('main-content')
