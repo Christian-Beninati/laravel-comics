@@ -6,5 +6,5 @@
 
 {{-- Main content --}}
 @section('main-content')
-    <h1>HOME PAGE</h1>
+    <h1>TV PAGE</h1>
 @endsection
