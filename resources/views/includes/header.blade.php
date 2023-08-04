@@ -1,3 +1,8 @@
+{{-- Config --}}
+@php
+    $links = config('header_menu');
+@endphp
+
 <header>
     <div class=" header-container container">
         <figure>
@@ -5,16 +10,9 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="{{ route('caracters') }}">CARACTERS</a></li>
-                <li><a href="{{ route('comics') }}">COMICS</a></li>
-                <li><a href="{{ route('movies') }}">MOVIES</a></li>
-                <li><a href="{{ route('tv') }}">TV</a></li>
-                <li><a href="{{ route('games') }}">GAMES</a></li>
-                <li><a href="{{ route('collectibles') }}">COLLECTIBLES</a></li>
-                <li><a href="{{ route('videos') }}">VIDEOS</a></li>
-                <li><a href="{{ route('fans') }}">FANS</a></li>
-                <li><a href="{{ route('news') }}">NEWS</a></li>
-                <li><a href="{{ route('shop') }}">SHOP</a></li>
+                @foreach ($links as $link)
+                    <li><a href="{{ route($link['route']) }}">{{ $link['text'] }}</a></li>
+                @endforeach
             </ul>
         </nav>
     </div>
