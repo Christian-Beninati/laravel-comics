@@ -10,6 +10,13 @@
     {{-- Icon --}}
     <link rel="icon" href="{{ Vite::asset('resources/img/favicon.ico') }}">
 
+    <style>
+        body {
+            display: none
+        }
+    </style>
+
+
     {{-- Import asset --}}
     @vite('resources/js/app.js')
 </head>
