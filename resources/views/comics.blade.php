@@ -5,10 +5,6 @@
 @section('title', 'Comics')
 
 {{-- Main content --}}
-@php
-    $comics = config('comics');
-@endphp
-
 @section('main-content')
     <section class="container ">
         <div class="card-container">
@@ -23,41 +19,19 @@
             <a href="#">Load More</a>
         </div>
     </section>
-    {{-- Main Links --}}
+    {{-- related items --}}
     <section>
-        <div class="main-links">
+        <div class="related-items">
             <div class="container">
                 <ul>
-                    <li>
-                        <a href="#">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="DC">
-                            <h3>Digital Comics</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="DC">
-                            <h3>DC Merchandise</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="DC">
-                            <h3>Subscription</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="DC">
-                            <h3>Comic Shop Locator</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="DC">
-                            <h3>DC Power Visa</h3>
-                        </a>
-                    </li>
+                    @foreach ($related_items as $item)
+                        <li>
+                            <a href="#">
+                                <img src="{{ Vite::asset('resources/img/' . $item['img']) }}" alt="{{ $item['text'] }}">
+                                <h3>{{ $item['text'] }}</h3>
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
