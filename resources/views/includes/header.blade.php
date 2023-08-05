@@ -22,7 +22,12 @@
                 {{-- foreach on links --}}
                 @foreach ($links as $link)
                     <li><a @if (Route::is($link['route'])) class="active" @endif {{-- add class active --}}
-                            href="{{ route($link['route']) }}">{{ $link['text'] }}</a></li>
+                            href="{{ route($link['route']) }}">{{ $link['text'] }}
+                            {{-- Blue arrow --}}
+                            @if ($link['text'] === 'shop')
+                                <i class="fa-solid fa-sort-down blue-arrow"></i>
+                            @endif
+                        </a></li>
                 @endforeach
             </ul>
         </nav>

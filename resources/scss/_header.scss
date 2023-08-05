@@ -28,7 +28,7 @@
         font: var(--fa-font-solid);
         color: $white;
         position: absolute;
-        left: 130px; 
+        left: 120px; 
         top: 50%;
         transform: translateY(-50%);
 
@@ -56,7 +56,8 @@ ul {
     display: flex;
 
     li {
-        padding: 0 10px;
+        padding: 0 15px;
+
 
         a {
             color: $lightBlack;
@@ -70,8 +71,17 @@ ul {
                 border-bottom: 5px solid $blue;
                 padding-bottom: 35px;
             }
+
+            .blue-arrow {
+                color: $blue;
+                margin-left: 5px;
+                font-size: 15px;
+                position: relative;
+                top: -4px;
+            }
         }
     }
+    
 }
 }
 
