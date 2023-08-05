@@ -1,15 +1,50 @@
 @use "../scss/mixins" as *;
 @use "../scss/vars" as *;
 
+// Top Header
+.top-header {
+    height: 25px;
+    background-color: $blue;
+    text-transform: uppercase;
+    
+    a{
+        color: $white;
+        font-size: 11px;
+        margin-left: 50px;
+        font-weight: 700;
+        position: relative;
+    }
+}
 
+.top-header-container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-right: 20px;
+    @include flexbox(end, center);
+
+    a:nth-child(2)::after{
+        content: '\f0d7';
+        font: var(--fa-font-solid);
+        color: $white;
+        position: absolute;
+        left: 130px; 
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+}
+
+
+// Main Header
 
 .header-container {
-    height: 100%;
     @include flexbox(space-between, center);
+    margin-top: 13px;
 }
 
 header {
-    height: 110px;
+    height: 130px;
     background-color: $white;
 
 
@@ -33,7 +68,7 @@ ul {
             &.active {
                 color: $blue;
                 border-bottom: 5px solid $blue;
-                padding-bottom: 40px;
+                padding-bottom: 35px;
             }
         }
     }

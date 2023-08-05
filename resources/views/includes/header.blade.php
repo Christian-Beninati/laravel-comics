@@ -4,6 +4,15 @@
 @endphp
 
 <header>
+    {{-- Top Header --}}
+    <div class="top-header">
+        <div class="top-header-container">
+            <a href="#">dc power visa</a>
+            <a href="#">additional dc site</a>
+        </div>
+    </div>
+
+    {{-- Main Header --}}
     <div class=" header-container container">
         <figure>
             <a href="{{ route('home') }}"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Logo"></a>
