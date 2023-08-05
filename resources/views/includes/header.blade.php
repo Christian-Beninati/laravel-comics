@@ -17,5 +17,7 @@
                 @endforeach
             </ul>
         </nav>
+        {{-- Search bar --}}
+        <div class="search-bar"><input type="text" placeholder="Search"></div>
     </div>
 </header>
