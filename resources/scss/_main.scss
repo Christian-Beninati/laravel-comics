@@ -50,6 +50,7 @@ main {
 
 .related-items {
     background-color: $blue;
+    
 
     img {
         width: 60px;
@@ -64,11 +65,11 @@ main {
         height: 150px;
     }
 
-    a {
+    li {
         @include flexbox(flex-start, center);
-        font-size: 0.7rem;
-        color: $white;
+        cursor: pointer;
     }
+
     h3 {
         margin-top: 10px;
         color: $white;

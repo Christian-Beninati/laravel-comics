@@ -26,10 +26,8 @@
                 <ul>
                     @foreach ($related_items as $item)
                         <li>
-                            <a href="#">
-                                <img src="{{ Vite::asset('resources/img/' . $item['img']) }}" alt="{{ $item['text'] }}">
-                                <h3>{{ $item['text'] }}</h3>
-                            </a>
+                            <img src="{{ Vite::asset('resources/img/' . $item['img']) }}" alt="{{ $item['text'] }}">
+                            <h3>{{ $item['text'] }}</h3>
                         </li>
                     @endforeach
                 </ul>
