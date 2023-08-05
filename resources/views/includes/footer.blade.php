@@ -56,7 +56,8 @@
             </nav>
             <div class="cookies">
                 <p>
-                    All Site Content TM and @ 2020 Dc Entertainment, unless otherwise
+                    All Site Content TM and <i class="fa-regular fa-copyright"></i> 2020 Dc Entertainment, unless
+                    otherwise
                     <a href="#">noted here.</a>
                     All rights reserved.
                 </p>
