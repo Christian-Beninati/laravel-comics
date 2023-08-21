@@ -21,7 +21,7 @@
     }
     .blue-bar{
         background-color: $blue ;
-        height: 70px;
+        height: 80px;
     }
 
     .row{
@@ -150,6 +150,20 @@
             }
         }
 
+    }
+
+    // Next and Prev 
+    i{
+        color: $white;
+        position: absolute;
+        top: 3%;
+        transform: translateY(-40%);
+    }
+    .fa-chevron-right{
+        right: 20px;
+    }
+    .fa-chevron-left{
+        left: 20px;
     }
 }
 
