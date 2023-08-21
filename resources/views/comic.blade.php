@@ -2,4 +2,4 @@
 @extends('layouts.main')
 
 {{-- Title --}}
-@section('title', 'Comic')
+@section('title', $comic['series'])
