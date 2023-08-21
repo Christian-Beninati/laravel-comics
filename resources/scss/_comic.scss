@@ -10,7 +10,7 @@
         overflow: hidden;
         padding: 0 1.5rem ;
         position: absolute;
-        bottom: 85%;
+        bottom: 93%;
         img {
             display: block;
             width: 100%;
@@ -118,7 +118,36 @@
             padding: 30px 0;
             font-size: 25px;
             color: $darkBlue;
-            border-bottom: 1px solid lightgray;
+            border-bottom: 1px solid $lightGrey;
+        }
+
+        // Related Links
+        .related-links{
+            border-top: 1px solid $lightGrey;
+            .row{
+                display: flex;
+                margin: 0;
+            }
+            .col{
+                flex-basis: 25%;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                border-left: 1px solid $lightGrey;
+                border-right: 1px solid $lightGrey;
+                margin: 0;
+                h6{
+                    color:$grey ;
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+                img{
+                    width: 40px;
+                    color: $grey;
+                    filter: brightness(0) saturate(100%) invert(100%) sepia(33%) saturate(3884%) hue-rotate(182deg) brightness(122%) contrast(73%);
+                    object-fit: contain;
+                }
+            }
         }
 
     }
