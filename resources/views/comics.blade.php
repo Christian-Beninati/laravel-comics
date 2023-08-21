@@ -6,6 +6,10 @@
 
 {{-- Main content --}}
 @section('main-content')
+    <div class="current-series">
+        <a href="#">Current Series </a>
+    </div>
+
     <section class="container ">
         <div class="card-container">
             @foreach ($comics as $comic)
