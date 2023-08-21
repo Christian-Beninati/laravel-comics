@@ -38,7 +38,7 @@
     }
     h2{
         font-size: 35px;
-        color: $dark-blue;
+        color: $darkBlue;
         margin-bottom: 20px;
     }
 
@@ -54,7 +54,7 @@
             border-right:1px solid $black ;
             padding: 20px 25px;
             .price{
-                color: $light-green;
+                color: $lightGreen;
                 font-weight: 600;
                 flex-basis:60% ;
                 height: 100%;
@@ -63,7 +63,7 @@
                 }
             }
             .status{
-                color: $light-green;
+                color: $lightGreen;
                 font-weight: 600;
                 flex-basis:40% ;
                 text-align: end;
@@ -79,14 +79,48 @@
 
     }
     .description{
-        color: $grey;
-        font-size: 20px;
+        color: $darkGrey;
+        font-size: 16px;
         line-height: 29px;
     }
     h5{
         color: $grey;
         font-size: 20px;
         margin-bottom: 20px;
+    }
+
+    .info-comic{
+        background-color: $lightGreyBackground;
+        .row{
+            @include flexbox(space-between);
+            .col{
+                flex-basis: 48%;
+                margin-bottom: 100px;
+                .row-info{
+                    @include flexbox(space-between);
+                    padding: 10px 0;
+                    border-bottom: 1px solid $lightGrey;
+
+                }
+                .col-left{
+                    color: $darkBlue;
+                }
+                .col-right{
+                    flex-basis: 70%;
+                    color: $lightBlue;
+                }
+                .color-black{
+                    color: $black;
+                }
+            }
+        }
+        h4{
+            padding: 30px 0;
+            font-size: 25px;
+            color: $darkBlue;
+            border-bottom: 1px solid lightgray;
+        }
+
     }
 }
 
